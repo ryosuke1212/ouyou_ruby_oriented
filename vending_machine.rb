@@ -21,6 +21,7 @@ class VendingMachine
 
     if kind_of_drink == DrinkType::COKE && @stock_of_coke.quantity == 0
       @change.push(payment)
+      return nil
     elsif kind_of_drink == DrinkType::DIET_COKE && @stock_of_diet_coke.quantity == 0 then
       @change.push(payment)
       return nil
